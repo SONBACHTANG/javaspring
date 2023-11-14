@@ -1,0 +1,6 @@
+com\service\StudentService.class
+com\config\JPAconfig.class
+com\reponsitory\StudentReponsitory.class
+com\controller\StudentController.class
+com\service\impl\StudentServiceImpl.class
+com\entity\StudentEntity.class
