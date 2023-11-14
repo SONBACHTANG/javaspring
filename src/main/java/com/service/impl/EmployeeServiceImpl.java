@@ -36,24 +36,13 @@ public class EmployeeServiceImpl implements EmployeetService {
 	}
 
 	@Override
-	public EmployeeEntity save(EmployeeEntity stentity) {
+	public EmployeeDTO save(EmployeeDTO stentity) {
 		// TODO Auto-generated method stub
-		return null;
+		EmployeeEntity enti=new EmployeeEntity();
+		return Converter.toDTO(sReponsitory.save(enti));
 	}
 
-	@Override
-	public EmployeeEntity update(EmployeeEntity stentity) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public void delete(long[] ids) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-		
 	
 
 }

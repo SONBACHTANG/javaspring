@@ -31,7 +31,7 @@
 <body>
     <h2>Danh Sách Nhân Viên</h2>
 
-    <button id="addButton" onclick="location.href='/add-student'">Thêm Nhân Viên</button>
+  <a href="./add-employee">Thêm Nhân Viên</a> 
 
     <table>
         <thead>
@@ -43,11 +43,13 @@
             </tr>
         </thead>
         <tbody>
-         	 <tr th:each="employee : ${listemployee}">
-                <td th:text="${employee.id}"></td>
-                <td th:text="${employee.name}"></td>
-                <td th:text="${employee.wage}"></td>
+        <c:forEach items="${listemployee}" var="o">
+         	 <tr >
+                <td > ${o.id}</td>
+                <td > ${o.name}</td>
+                <td > ${o.wage}</td>
                 </tr>
+                </c:forEach>
         </tbody>
     </table>
 </body>
